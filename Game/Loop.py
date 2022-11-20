@@ -2,8 +2,20 @@ from Game.WordStore import WordStore
 from Game.Board import Board
 
 class Loop:
+    """The game loop that controls the play of the game
+    
+    
+    """
 
     def start_game(self):
+        """This is the main function of the game loop
+        
+        Args:
+            bad_guesses: the number of guesses that did not result in a correct letter being found or whole words that were wrong
+            guessed_letters: the letters that have already been guessed
+            winner: true if the player has guessed the word or all of the letters
+
+        """
         bad_guesses = 0
         guessed_letters = []
         winner = False
